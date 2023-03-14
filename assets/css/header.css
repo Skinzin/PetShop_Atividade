@@ -1,0 +1,179 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+}
+
+.logo {
+    font-family: "Bangers", sans-serif;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    width: 100%;
+    background-color: #009ae2;
+
+    padding: 12px 12px;
+}
+
+nav span.title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+nav span.description {
+    font-weight: 300;
+    margin-left: .8rem;
+    padding-left: .8rem;
+    border-left: 1px solid black;
+}
+
+nav img {
+    margin: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.057);
+}
+
+.sign span, .sign a {
+    color: white;
+}
+
+.sign div {
+    display: flex;
+    flex-direction: column;
+}
+
+#productManage {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    border-radius: 8px;
+    max-width: 32rem;
+    width: 100%;
+
+    padding: 6px 8px;
+}
+
+#productManage input,
+#productManage button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#productManage input {
+    width: 100%;
+}
+
+#productManage button {
+    padding: 0 4px;
+}
+
+.menuContainer {
+    /* display: flex; */
+    display: none;
+    align-items: center;
+}
+
+.menuIcon, .closeMenu {
+    display: none;
+    margin-left: 2px;
+}
+
+
+@media (max-width: 615px) {
+    .menuIcon, .closeMenu {
+        color: black;
+    }
+
+    nav {
+        justify-content: normal;
+    }
+
+    .sign {
+        margin-left: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu:target {
+        display: inline-block;
+    }
+
+    #menu:target ~ .menuContainer .menuIcon {
+        display: none;
+    } 
+
+    #menu:target ~ .menuContainer .closeMenu {
+        display: block;
+    } 
+
+    .menuIcon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .menuContainer {
+        display: flex;
+    }
+
+    #menu > ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #009ae2;
+        padding: 16px 20px;
+
+        position: fixed;
+        top: 74px;
+        right: 0px;
+        width: 100%;
+        height: auto;
+
+        z-index: 7;
+
+        border-radius: 0 0 8px 8px;
+        box-shadow: var(--shadow-md);
+    }
+
+    .about img {
+        width: 95%;
+        height: 85%;
+
+        margin: 0 auto;
+    }
+
+    .banner > div img:nth-child(1) {
+        width: 95%;
+        height: 85%;
+    }
+}
+

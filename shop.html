@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>PetShop Animal Feliz</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Coming+Soon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/css/global.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="stylesheet" href="./assets/css/header.css">
+</head>
+<body>
+	<header>
+			<nav>
+				<span class="logo">PetShow</span>
+							
+				<div id="menu">
+					<ul >
+						<li><a href="./">Home</a></li>
+						<li><a href="./shop.html">Shopping</a></li>
+						<li><a href="./adote.html">Adote</a></li>
+						<li><a href="./about.html#about">Sobre nós</a></li>
+						<li><a href="./about.html#contact">Contato</a></li>
+					</ul>
+				</div>
+	
+				<div class="sign">
+					<span class="material-symbols-outlined">account_circle</span>
+					<div>
+						<a href="./SignIn.html">Logar</a>
+						<a href="./SignUp.html">Cadastrar</a>
+					</div>
+	
+				</div>
+
+				<div class="menuContainer">
+					<a href="#menu" class="material-symbols-outlined menuIcon">menu</a>
+					<a href="#" class="material-symbols-outlined closeMenu">close</a>
+				</div>
+			</nav>
+		</header>
+
+	
+	<main >
+		<div class="containerProduct" >
+			<!-- <h2 class="title">Nossos Produtos</h2> -->
+
+			<div class="filterMoba">
+				<a href="#filter">
+					<span class="material-symbols-outlined">filter_list</span>
+					<span>Filtro</span>
+				</a>
+			</div>
+
+			<div id="filter">
+				<div>
+					<label class="labelFloat">
+						<input type="text" name="search" id="search" placeholder=" ">
+						<label for="search">Pesquisar</label>
+
+						<span class="material-symbols-outlined">search</span>
+					</label>
+	
+					<span class="title">Marca</span>
+					<div class="options">
+						<div>
+							<input type="checkbox" name="Pedigree" id="Pedigree">
+							<label for="Pedigree">Pedigree</label>
+						</div>
+						
+						<div>
+							<input type="checkbox" name="Premier" id="Premier">
+							<label for="Premier">Premier</label>
+						</div>
+	
+						<div>
+							<input type="checkbox" name="Pro_plan" id="Pro_plan">
+							<label for="Pro_plan">Pro Plan</label>
+						</div>
+	
+						<span class="more">Ver mais (10)</span>
+					</div>
+	
+					<span class="title">Porte</span>
+					<div class="options">
+						<div>
+							<input type="checkbox" name="mini">
+							<label for="mini">Mini</label>
+						</div>
+	
+						<div>
+							<input type="checkbox" name="pequenas">
+							<label for="pequenas">Pequenas</label>
+						</div>
+	
+						<div>
+							<input type="checkbox" name="medias">
+							<label for="medias">Médias</label>
+						</div>
+	
+						<div>
+							<input type="checkbox" name="grandes">
+							<label for="grandes">Grandes</label>
+						</div>
+					</div>
+	
+					<span class="title">Idade</span>
+					<div class="options">
+						<div>
+							<input type="checkbox" name="filhote">
+							<label for="filhote">Filhote</label>
+						</div>
+	
+						<div>
+							<input type="checkbox" name="adulto">
+							<label for="adulto">Adulto</label>
+						</div>
+					</div>
+
+
+					<a href="#" class="close">Fechar</a>
+				</div>
+			</div>
+
+			<div class="cardsWrap">
+				<div id="cardContent">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 PetShop Animal Feliz. Todos os direitos reservados.</p>
+	</footer>
+
+	<script src="./assets/script/index.js"></script>
+</body>
+</html>

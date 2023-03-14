@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | PetShow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Coming+Soon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <header>
+        <div>
+            <button class="control" onclick="goBack()">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Voltar</span>
+            </button>
+
+            <a href="./about.html#contact">
+                <span>Contato</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h3 class="title">Olá! Vamos criar sua conta =)</h3>
+
+            <form action="#" method="post" id="signup">
+                <div class="labelGrid">
+                    <label class="labelFloat">
+                        <input type="text" name="name" id="name" placeholder=" " required>
+                        <label for="name">Nome</label>
+                    </label>
+                    
+                    <label class="labelFloat">
+                        <input type="text" name="surname" id="surname" placeholder=" " required>
+                        <label for="surname">Sobrenome</label>
+                    </label>
+                </div>
+
+                <label class="labelFloat">
+                    <input type="number" name="cpf" id="cpf" placeholder=" " min="0" max="99999999999" required>
+                    <label for="cpf">CPF (Sem Pontos)</label>
+                </label>
+
+                <label class="labelFloat">
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="email">E-mail</label>
+                </label>
+
+                <label class="labelFloat">
+                    <input type="password" name="senha" id="senha" placeholder=" " required>
+                    <label for="senha">Senha</label>
+                </label>
+
+                <div class="actions">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">login</span>
+                        <span>Cadastrar</span>
+                    </button>
+
+                    <a href="./SignIn.html">Já tenho cadastro</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./assets/script/redirect.js"></script>
+    <script src="./assets/script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+header button {
+    color: #000;
+}
+
+button {
+    margin: 0;
+    background-color: transparent;
+    color: var(--zinc-400);
+
+    padding: 0;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px;
+}
+
+a {
+    color: var(--sky-500) !important;
+}
+
+a:hover {
+    color: #2d74dd !important;
+}
+
+
+/* Container */
+.content {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--zinc-300);
+
+    max-width: 24rem;
+    padding: 28px 32px;
+
+    box-shadow: var(--shadow-lg);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 28px;
+}
+
+.actions button, .actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+
+    width: 100%;
+    height: 38px;
+
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: background-color .3s, box-shadow .3s;
+}
+
+.actions button {
+    background-color: var(--sky-500);
+    margin-bottom: 12px;
+}
+
+.actions button:hover {
+    background-color: #3483fa;
+    box-shadow: var(--shadow-lg);
+}
+
+.actions a {
+    color: var(--sky-500);
+}
+
+.actions a:hover {
+    background-color: rgba(204, 204, 204, 0.247);
+    box-shadow: var(--shadow-lg);
+    color: #3483fa;
+}
+
+input {
+    border: 1px solid var(--zinc-300) !important;
+}
+
+
+/* Label */
+
+.labelFloat {
+    margin-bottom: 8px;
+}
+
+.labelGrid {
+    gap: 4px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        z-index: 9;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 100vw;
+        width: 100%;
+        height: 100%;
+
+        /* padding: 28px calc(32px * 2); */
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 635px) {
+    .labelGrid {
+        flex-direction: column;
+    }
+
+    form, .labelGrid .labelFloat {
+        width: 100%;
+    }
+}

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --gray-400: #9ca3af;
+
+    --zinc-300: #d4d4d8;
+    --zinc-400: #a1a1aa;
+
+    --cyan-500: #0ea5e9;
+
+    --sky-500: #0ea5e9;
+    --sky-700: #0369a1;
+
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+body {
+    background-color: #ededed;
+
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 115rem;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    width: fit-content;
+    margin: auto;
+
+    border: none;
+
+    background-color: #FFA500;
+    padding: 14px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #efefef;
+    cursor: pointer;
+
+    transition: box-shadow .3s;
+}
+
+button a {
+    color: #efefef;
+}
+
+button:hover {
+    box-shadow: var(--shadow-md);
+}
+
+
+.material-symbols-outlined {
+    cursor: default;
+    user-select: none;
+}
+
+.title {
+    margin: 0 auto;
+
+    font-family: "Coming Soon", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Label Float */
+.labelFloat {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.labelFloat label {
+    position: absolute;
+    color: var(--gray-400);
+
+    top: 31%;
+    left: 15px;
+    transition: .1s;
+}
+
+.labelFloat input,
+.labelFloat textarea {
+    width: 100%;
+    min-height: 2.25rem;
+
+    padding: 12px;
+    margin-top: 4px;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.labelFloat input:focus {
+    border: 1px solid var(--sky-500) !important;
+    transition: .3s;
+} 
+
+.labelFloat input:focus + label,
+.labelFloat input:not(:placeholder-shown) + label,
+.labelFloat textarea:focus + label,
+.labelFloat textarea:not(:placeholder-shown) + label {
+    background-color: #fff;
+    color: var(--sky-500);
+
+    font-size: 13px;
+    padding: 0 6px;
+    border-radius: 8px;
+
+    top: -5px;
+    left: 8px;
+}
+
+.labelFloat input:not(:focus):not(:placeholder-shown) + label,
+.labelFloat textarea:not(:focus):not(:placeholder-shown) + label {
+  color: var(--gray-400);
+}
+
+.labelFloat span {
+    background-color: #fff;
+    color: var(--gray-400);
+    border-radius: 8px;
+    padding: 8px;
+
+    position: absolute;
+    top: 50%;
+    right: 5px;
+
+    transform: translate(0, -50%);
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.labelFloat span:hover {
+    color: var(--sky-500);
+}
+
+.labelGrid {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.labelGrid .labelFloat {
+    width: 300px;
+}
+
+.desc {
+    margin-top: 12px;
+}
+
+.labelFloat textarea {
+    max-width: 612px;
+    min-width: 150px;
+    max-height: 194px;
+    min-height: 70px;
+}
+
+.labelFloat:nth-child(4) {
+    margin-top: 12px;
+}
+
+/* Footer */
+footer {
+    
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+
+    margin-top: 1rem;
+    padding: 40px 12px;
+    width: 100%;    
+}
+
+footer > div {
+    display: flex;
+}
+
+footer > div div {
+    margin-left: auto;
+}
+
+footer ul {
+    display: flex;
+    gap: 6px;
+}
+/* Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sky-700);
+    border-radius: 6px;
+}
+
+
+@media (max-width: 600px) {
+    footer > div {
+        display: inline;
+    }
+
+    footer > div div {
+        margin-top: 14px;
+    }
+}
+
