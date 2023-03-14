@@ -433,5 +433,5 @@ function openProduct(id) {
   * @param {Number} id
   **/
 function openPet(id) {
-    window.location.href = `./product.html?petId=${id}`;
+    window.location.href = `./adote.html?error=Redirect`;
 }
