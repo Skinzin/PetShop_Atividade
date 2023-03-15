@@ -402,7 +402,7 @@ function checkProduct() {
         return window.location.href = "./shop.html?error=notFound";
     }
 
-    loadProduct(products[urlParms.get("productId"));
+    loadProduct(products[urlParms.get("productId")]);
 }
 
 function loadProduct(product) {
