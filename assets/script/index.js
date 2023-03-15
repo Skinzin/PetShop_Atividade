@@ -402,23 +402,21 @@ function checkProduct() {
         return window.location.href = "./shop.html?error=notFound";
     }
 
-    loadProduct();
+    loadProduct(urlParms.get("productId"));
 }
 
-function loadProduct() {
+function loadProduct(id) {
     
     const getTitle = document.getElementById("title");
     const getPrice = document.getElementById("price");
     const getImage = document.getElementById("productSrc");
     const getDescription = document.getElementById("description");
 
-    products.map(product => {
-       getTitle.innerHTML = product.title;
-       getPrice.innerHTML = product.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
-       getImage.setAttribute("src", product.img);
-       getImage.setAttribute("alt", `Foto do produto ${product.title}`);
-       getDescription.innerHTML = product.details;
-    })
+   getTitle.innerHTML = product[id].title;
+   getPrice.innerHTML = product[id].price.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+   getImage.setAttribute("src", product[id].img);
+   getImage.setAttribute("alt", `Foto do produto ${product[id].title}`);
+   getDescription.innerHTML = product[id].details;
 }
 
 /* ... */
