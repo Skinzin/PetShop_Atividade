@@ -412,11 +412,11 @@ function loadProduct(product) {
     const getImage = document.getElementById("productSrc");
     const getDescription = document.getElementById("description");
 
-   getTitle.innerHTML = product[id].title;
-   getPrice.innerHTML = product[id].price.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
-   getImage.setAttribute("src", product[id].img);
-   getImage.setAttribute("alt", `Foto do produto ${product[id].title}`);
-   getDescription.innerHTML = product[id].details;
+   getTitle.innerHTML = product.title;
+   getPrice.innerHTML = product.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+   getImage.setAttribute("src", product.img);
+   getImage.setAttribute("alt", `Foto do produto ${product.title}`);
+   getDescription.innerHTML = product.details;
 }
 
 /* ... */
