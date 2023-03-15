@@ -402,10 +402,10 @@ function checkProduct() {
         return window.location.href = "./shop.html?error=notFound";
     }
 
-    loadProduct(urlParms.get("productId"));
+    loadProduct(products[urlParms.get("productId"));
 }
 
-function loadProduct(id) {
+function loadProduct(product) {
     
     const getTitle = document.getElementById("title");
     const getPrice = document.getElementById("price");
