@@ -2,7 +2,7 @@
   * @param { string } page 
   */
 function redirectPage(page) {
-    // window.location("")
+    window.location.href = page;
 }
 
 function goBack() {
